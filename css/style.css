@@ -1,0 +1,18 @@
+header{
+    background-color: rgb(248, 249, 250);
+}
+
+.menu-sx{
+    background-image:url(../img/img/sidebar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+
+main{
+    display: flex;
+}
+
+.sotto-menù{
+    background-color: rgb(27, 114, 232);
+}
