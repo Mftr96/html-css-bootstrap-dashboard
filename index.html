@@ -6,20 +6,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Dashboard</title>
 </head>
 <body>
     <header>
         <div class="row">
-            <div class="col-2">
-                1
+            <div class="col-2 m-0 d-flex justify-content-center align-items-center">
+                <img src="./img/img/logo.svg" alt="logo">
             </div>
-            <div class="col-8">
-                2
+            <!-- SEARCH BAR -->
+            <div class="col-8 d-flex align-items-center grey-search">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <input class="w-100 border-0" type="text" placeholder="Prova a cercare:Lezioni di Laravel">
+                </div>
             </div>
-            <div class="col-2">
-                3
+            <div class="col-2 d-flex justify-content-between align-items-center m-0">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-question"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="dropdown ">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>    
+                
             </div>
         </div>
     </header>
@@ -62,35 +79,35 @@
                 </div>
             </div>
             <!-- SEZIONE PRINCIPALE DELLA PAGINA -->
-            <div class="col-12 d-flex flex-column">
+            <div class="col-12 m-0 d-flex  contenuto ">
                 <!-- COLONNA SX -->
-                <div class="col-8 row flex-column">
+                <div class="col-8 row m-0 p-0 flex-column colonna-sx" id="sinistra" >
                     <div class="col-8">
                         <div>
                             <h2>prossime classi</h2>
                             <hr>
-                        <div>
-                            <!-- TABLE BTRAP -->
+                        </div><!-- TABLE BTRAP -->
                     </div>
                     <!-- FAQ -->
                     <div class="col-4">
                         <div>
                             <h2>F.A.Q.</h2>
                             <hr>
-                        <div>
+                        </div>
                             <!-- CERCARE ACCORDION BOOTSTRAP -->
 
                     </div>
 
                 </div>
+                <!-- fine colonna sx -->
+
                 <!-- COLONNA DX -->
-                <div class="col-4 row flex-column">
-                    <!-- TO-DO -->
-                    <div class="col-4">
+                <div class="col-4 m-0 row flex-column colonna-dx" id="destra">
+                    <div class="col-4 w-100">
                         <div>
                             <h2>To-Do</h2>
                             <hr>
-                        <div>
+                        </div>  
                             <div>
                                 <div class="d-flex">
                                     <input type="checkbox">
@@ -104,15 +121,15 @@
                                 </div>
                             </div>           
                     </div>
-                    <!-- UTENTI ATTIVI -->
-                    <div class="col-4">
-                        <img src="" alt="">
+                    <div class="col-4 w-100">
+                        <img src="./img/img/" alt="stats">
                         <h4>Utenti attivi</h4>
                     </div>
                 </div>
+                </div>
+                
+            <!-- fine colonna dx -->
 
-
-            </div>
         </section>
     </main>
 </body>

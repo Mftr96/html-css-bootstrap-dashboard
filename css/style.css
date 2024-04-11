@@ -2,17 +2,32 @@ header{
     background-color: rgb(248, 249, 250);
 }
 
+.grey-search *{
+    background-color: rgb(229, 229, 229);
+}
+
 .menu-sx{
     background-image:url(../img/img/sidebar-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: blue;
 }
 
 main{
     display: flex;
+    background-color: rgb(248, 249, 250);
 }
 
 .sotto-menù{
     background-color: rgb(27, 114, 232);
+}
+.contenuto{
+    border: 3px solid black;
+}
+
+.colonna-sx{
+    border: 1px solid crimson;
+}
+.colonna-dx{
+    border: 3px solid yellow;
 }
