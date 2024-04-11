@@ -116,54 +116,144 @@
 
             </div>
             <!-- SEZIONE PRINCIPALE DELLA PAGINA -->
-            <div class="col-12 m-0 d-flex  contenuto ">
+            <div class="col-12 m-0 d-flex gap-3  contenuto ">
                 <!-- COLONNA SX -->
-                <div class="col-8 row m-0 p-0 flex-column colonna-sx" id="sinistra">
-                    <div class="col-12">
+                <div class="col-8 row m-0 p-0 border flex-column colonna-sx" id="sinistra">
+                    <div class="col-12 border ">
                         <div>
                             <h2>prossime classi</h2>
                             <hr>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 border ">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">data inizio </th>
+                                <th scope="col">ROI</th>
+                                <th scope="col">stato</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img  src="./img/img/class-avatar.jpg " alt="class-avatar">Classe 75</th>
+                                <td>15 febbraio 2021</td>
+                                <td>20%</td>
+                                <td><button class="btn btn-success">done</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img  src="./img/img/class-avatar.jpg " alt="class-avatar">Classe 76</th>
+                                <td>16 febbraio 2021</td>
+                                <td>20%</td>
+                                <td><button class="btn btn-success">done</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img  src="./img/img/class-avatar.jpg " alt="class-avatar">Classe 77</th>
+                                <td>17 febbraio 2021</td>
+                                <td>20%</td>
+                                <td><button class="btn btn-success">done</button></td>
+                              </tr>
+                              <th scope="row"><img  src="./img/img/class-avatar.jpg " alt="class-avatar">Classe 77</th>
+                              <td>17 febbraio 2021</td>
+                              <td>20%</td>
+                              <td><button class="btn btn-success">done</button></td>
+                            </tr>
                     
+                            </tbody>
+                          </table>
+                    
+                        
                     </div>
                     <!-- FAQ -->
-                    <div class="col-4">
+                    <div class="col-12">
                         <div>
                             <h2>F.A.Q.</h2>
                             <hr>
                         </div>
                         <!-- CERCARE ACCORDION BOOTSTRAP -->
-
+                        <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Come aggiungere un nuovo studente?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Come posso accedere alle informazione del mio account?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Posso usare questa dashboard da mobile?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                        </div>
                     </div>
 
                 </div>
                 <!-- fine colonna sx -->
 
                 <!-- COLONNA DX -->
-                <div class="col-4 m-0 row flex-column colonna-dx" id="destra">
-                    <div class="col-4 w-100">
+                <div class="col-4 m-0 gap-4 row flex-column colonna-dx" id="destra">
+                    <div class="col-4 w-100 border">
                         <div>
                             <h2>To-Do</h2>
                             <hr>
                         </div>
                         <div>
-                            <div class="d-flex">
+                            <div class=" col-12 d-flex">
                                 <input type="checkbox">
                                 <p>Kickoff nuova classe</p>
                             </div>
-                            <div>
+                            <div class="col-12 d-flex">
                                 <input type="checkbox">
+                                <p>Lezione su Bootstrap 5 in classe#75</p>
                             </div>
-                            <div>
+                            <div class="col-12 d-flex">
                                 <input type="checkbox">
+                                <p>controllare username github studenti</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 w-100">
-                        <img src="./img/img/" alt="stats">
+                    <div class="col-4 w-100 border">
+                        <img class="w-100" src="./img/img/stats.jpeg" alt="stats">
                         <h4>Utenti attivi</h4>
+                        <p>
+                            Lista utenti attivi in piattaforma nell'ultimo mese
+                        </p>
+                        <hr>
+                        <p>Gennaio:1200</p>
+                        <hr>
+                        <p>Febbraio:800</p>
+                        <hr>
+                        <p>Marzo:1500</p>
+                        <hr>
+                        <a href="#">Visualizza report approfondito</a>
                     </div>
                 </div>
             </div>
@@ -172,6 +262,4 @@
 
         </section>
     </main>
-</body>
-
 </html>
